@@ -16,7 +16,7 @@ module.exports = {
         'fluent-ffmpeg', 
         'chokidar', 
         'ffmpeg-static',
-        'ffprobe-static',
+        '@ffprobe-installer/ffprobe',
       ],
       builderOptions: {
         win: {

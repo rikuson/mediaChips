@@ -221,7 +221,7 @@ const mv = require('mv');
 const path = require('path')
 const shortid = require('shortid')
 const ffmpeg = require('fluent-ffmpeg')
-const pathToFfprobe = require('ffprobe-static').path.replace('app.asar', 'app.asar.unpacked')
+const pathToFfprobe = require('@ffprobe-installer/ffprobe').path.replace('app.asar', 'app.asar.unpacked')
 ffmpeg.setFfprobePath(pathToFfprobe)
 
 import Functions from '@/mixins/Functions'

@@ -415,7 +415,7 @@ const shortid = require('shortid')
 const shell = require('electron').shell
 const ffmpeg = require('fluent-ffmpeg')
 const pathToFfmpeg = require('ffmpeg-static').replace('app.asar', 'app.asar.unpacked')
-const pathToFfprobe = require('ffprobe-static').path.replace('app.asar', 'app.asar.unpacked')
+const pathToFfprobe = require('@ffprobe-installer/ffprobe').path.replace('app.asar', 'app.asar.unpacked')
 ffmpeg.setFfmpegPath(pathToFfmpeg)
 ffmpeg.setFfprobePath(pathToFfprobe)
 
